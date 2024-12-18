@@ -14,5 +14,5 @@ console.log(imc);
 console.log(anoNascimento);
 */
 
-console.log(nome, sobrenome, 'tem', idade, 'anos,', 'pesa', peso, 'kg,', 'tem', altura, 'de altura e seu IMC é de', imc);
+console.log(nome, sobrenome, 'tem', idade, 'anos,', 'pesa', peso, 'kg,', 'tem', altura, 'de altura e seu IMC é de', imc, 'nasceu em', anoNascimento);
 
