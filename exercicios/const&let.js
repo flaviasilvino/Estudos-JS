@@ -6,8 +6,8 @@ const sobrenome = 'Silvino';
 const idade = 22;
 const peso = 64;
 const altura = 1.59;
-let imc = peso / (altura * altura);
-let anoNascimento = 2024 - idade;
+imc = peso / (altura * altura);
+anoNascimento = 2024 - idade;
 
 /*
 console.log(imc);
