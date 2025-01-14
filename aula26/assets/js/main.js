@@ -1,6 +1,6 @@
 // Capturar evento de submite de formulário
 
-const form = document.querySelector('#formulario');
+const form = document.querySelector('#formulario'); // Captura do formulário.
 
 form.addEventListener('submit', function (e) {
     e.preventDefault();
@@ -13,12 +13,12 @@ form.addEventListener('submit', function (e) {
     const altura = Number(inputAltura.value);
 
     if(!peso){
-        setResultado('Peso inválido', false);
+        setResultado('Peso inválido.', false);
         return;
     }
 
     if(!altura){
-        setResultado('Altura inválido', false);
+        setResultado('Altura inválida.', false);
         return;
     }
 
@@ -49,8 +49,7 @@ function getImc (peso, altura) {
 
 function criaP () {
     const p = document.createElement('p');
-    p.innerHTML = msg;
-    resultado.appendChild(p);
+    return p;
 }
 
 function setResultado (msg, isValid) {
@@ -59,4 +58,12 @@ function setResultado (msg, isValid) {
 
     const p = criaP();
 
+    if (isValid) {
+     p.classList.add('paragrafo-resultado');
+    } else {
+    p.classList.add('bad');
+    }
+
+    p.innerHTML = msg;
+    resultado.appendChild(p);
 }
