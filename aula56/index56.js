@@ -20,3 +20,4 @@ const p1 = criaPessoa('Ana', 'Silvino', 1.8, 80);
 console.log(p1.imc());
 const p2 = criaPessoa('Fernando', 'Araujo', 1.6, 42);
 console.log(p2.imc());
+
